@@ -1,0 +1,81 @@
+.nav {
+    font: 90% "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
+  }
+  .nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .nav ul li {
+    float: left;
+    position: relative;
+  }
+ .nav ul li:hover, .nav ul  {
+    z-index: 100;
+  }
+  .nav ul li:hover ul, .nav ul li.hover ul {
+    left: 0;
+  }
+  .nav ul li:hover ul a, .nav ul li.hover ul a {
+    background: white;
+    color: #333333;
+    /*border: 1px solid #F2F2F2;
+    padding: 5px 10px;*/
+    width: 250px;
+    margin-left: -93px;
+    /*text-shadow: none;*/
+    
+    /* collapses top border */
+  }
+  .nav ul li:hover ul a:hover, .nav ul li:hover ul a:focus, .nav ul li:hover ul a:active, .nav ul li.hover ul a:hover, .nav ul li.hover ul a:focus, .nav ul li.hover ul a:active {
+    /*background: #fef5dc;*/
+    color: #993300;
+    
+  }
+  .nav ul a {
+    background: white;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, #F2F2F2));
+    background-image: -moz-linear-gradient(center bottom);
+    color: #242424;
+    text-decoration: none;
+   /* text-shadow: 0 1px 1px rgba(255, 255, 255, 0.7);*/
+    font-weight: bold;
+    padding: 10px;
+    display: block;
+    
+    position: relative;
+   /* margin-left: -1px;
+    collapses the left border */
+  }
+  .nav ul a:hover, .nav ul a:focus, .nav ul a:active,
+  .nav ul li.hover a {
+    /*background: #993300;*/
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(1,white), color-stop(1,red));
+    background-image: -moz-linear-gradient(center bottom,green 100%);
+    color: #993300;
+    border: 1px solid white;
+    /*text-shadow: 0 1px 1px rgba(0, 0, 0, 0.7);*/
+  }
+  .nav ul ul {
+    position: absolute;
+    top: 100%;
+    left: -9999em;
+    width: 180px;
+  }
+  .nav ul ul li {
+    float: none;
+    position: static;
+  }
+  
+  /*.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+  }
+  
+  .clearfix:after {
+    clear: both;
+  }
+  
+  .clearfix {
+    zoom: 1;
+  }*/
